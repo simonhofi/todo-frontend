@@ -1,0 +1,39 @@
+// Globale Styles und Variablen
+:root {
+  --primary-color: #007bff;
+  --primary-color-dark: #0056b3;
+  --secondary-color: #6c757d;
+  --secondary-color-dark: #464b4e;
+  --danger-color: #dc3545;
+  --danger-color-dark: #bd2130;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Alle anderen SCSS-Dateien
+@import './components/common/Button.scss';
+@import './components/common/DateInput.scss';
+@import './components/common/Form.scss';
+@import './components/common/Input.scss';
+@import './components/common/List.scss';
+@import './components/common/ListItem.scss';
+
+@import './components/todo/TodoFilters.scss';
+@import './components/todo/TodoForm.scss';
+@import './components/todo/TodoList.scss';
+
+@import './pages/TodoListPage.scss';

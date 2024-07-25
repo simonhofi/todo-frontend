@@ -1,0 +1,19 @@
+.todo-form {
+    margin-bottom: 30px;
+  
+    form {
+      display: flex;
+      gap: 15px;
+      align-items: flex-end;
+  
+      .input-wrapper {
+        flex-grow: 1;
+      }
+  
+      button {
+        align-self: flex-end;
+      }
+    }
+  }
+  
+  

@@ -1,0 +1,44 @@
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+  
+    .todo-content {
+      flex-grow: 1;
+      margin-right: 10px;
+      margin-left: 20px;
+    }
+  
+    .todo-actions {
+      display: flex;
+      gap: 5px;
+    }
+  
+    .completed {
+      text-decoration: line-through;
+      color: #888;
+    }
+  
+    .overdue {
+      color: var(--danger-color);
+    }
+
+    .date-badge {
+      font-size: 0.8em;
+      padding: 3px 8px;
+      border-radius: 12px;
+      background-color: #eee;
+      margin-right: 10px;
+
+      &.overdue {
+        background-color: var(--danger-color);
+        color: white;
+      }
+    }
+
+  }
